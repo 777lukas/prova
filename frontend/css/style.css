@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e9f5e9;
+    color: #333;
+    margin: 0;
+}
+
+.header {
+    background-color: #4caf50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.categoria {
+    text-align: center;
+}
+
+.vendas {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.produtos {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.produto img {
+    width: 150px;
+    height: 150px;
+    border-radius: 8px;
+}
+
+.dicas {
+    margin: 20px;
+    padding: 15px;
+    background-color: #dff0d8;
+    border-radius: 8px;
+}
+
+.login {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.login button {
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.login button:hover {
+    background-color: #45a049;
+}
