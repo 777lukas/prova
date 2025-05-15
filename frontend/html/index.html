@@ -4,23 +4,23 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jardinagem e Paisagismo</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
     <header class="header">
         <h1>Jardinagem e Paisagismo</h1>
-        <p>Portfólio - Explore meus projetos</p>
     </header>
 
+       <p>Explore meus projetos</p>
     <section class="portfolio">
         <div class="categoria">
             <h2>Flores</h2>
-            <img src="flores.jpg" alt="Flores">
+            <img src="../img/flor 1.PNG" alt="Flores">
         </div>
         <div class="categoria">
             <h2>Vasos</h2>
-            <img src="vasos.jpg" alt="Vasos">
+            <img src="../img/flor 2.PNG" alt="Vasos">
         </div>
     </section>
 
@@ -28,15 +28,15 @@
         <h2>Principais Vendas (Vasos)</h2>
         <div class="produtos">
             <div class="produto">
-                <img src="vaso1.jpg" alt="Vasos Grandes">
+                <img src="../img/vasos pequenos.PNG" alt="Vasos Grandes">
                 <p>Vasos Grandes</p>
             </div>
             <div class="produto">
-                <img src="vaso2.jpg" alt="Vasos Pequenos">
+                <img src="../img/vasos grandes.PNG" alt="Vasos Pequenos">
                 <p>Vasos Pequenos</p>
             </div>
             <div class="produto">
-                <img src="vaso3.jpg" alt="Vasos de Plástico">
+                <img src="../img/vasos sde plastico.PNG" alt="Vasos de Plástico">
                 <p>Vasos de Plástico</p>
             </div>
         </div>
@@ -44,21 +44,42 @@
         <h2>Principais Vendas (Flores)</h2>
         <div class="produtos">
             <div class="produto">
-                <img src="girassol.jpg" alt="Girassol">
+                <img src="../img/girrasol.PNG" alt="Girassol">
                 <p>Girassol</p>
             </div>
             <div class="produto">
-                <img src="rosa.jpg" alt="Rosas">
+                <img src="../img/rosas.PNG" alt="Rosas">
                 <p>Rosas</p>
             </div>
             <div class="produto">
-                <img src="orquidea.jpg" alt="Orquídeas">
+                <img src="../img/orquideas.PNG" alt="Orquídeas">
                 <p>Orquídeas</p>
             </div>
         </div>
     </section>
 
-    <section class="dicas">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Aprenda sobre Plantas</title>
+</head>
+<body>
+    <div class="search-container">
+        <h1>Aprenda um pouco mais sobre as plantas</h1>
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Pesquise aqui...">
+            <button onclick="searchPlant()">
+                🔍
+            </button>
+        </div>
+    </div>
+
+    <script src="../css/style.css"></script>
+</body>
+    
+<div class="container">
+    <div class="dicas">
         <h2>9 dicas de como cuidar das suas plantas do jeito certo</h2>
         <ul>
             <li>Conheça a planta e suas necessidades.</li>
@@ -71,13 +92,14 @@
             <li>Faça podas estratégicas.</li>
             <li>Dê carinho e atenção.</li>
         </ul>
-    </section>
+    </div>
 
-    <section class="login">
-        <h2>Entrar ou Cadastrar</h2>
-        <button>Entrar</button>
-        <button>Cadastrar</button>
-    </section>
+    <div class="acesso">
+        <h3>Entrar ou Cadastrar</h3>
+        <button onclick="window.location.href='login.html'">Entrar</button>
+        <button onclick="window.location.href='cadastro.html'">Cadastrar</button>
+    </div>
+</div>
 
 </body>
 </html>

@@ -1,4 +1,4 @@
-p
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
@@ -8,6 +8,14 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
+function searchPlant() {
+    const query = document.getElementById('searchInput').value;
+    if (query) {
+        window.location.href = 'resultados.html?query=' + encodeURIComponent(query);
+    } else {
+        alert("Digite algo para pesquisar.");
+    }
+}
 
 const formCadastro = document.querySelector('form[action="/cadastro"]');
 const formLogin = document.querySelector('form[action="/login"]');
