@@ -23,83 +23,98 @@
             <img src="../img/flor 2.PNG" alt="Vasos">
         </div>
     </section>
+   
+    <section class="vendas">
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="../img/vasos pequenos.PNG" alt="Vasos Grandes">
+                        <p>Vasos Grandes</p>
+                        <button onclick="comprarProduto('Vasos Grandes')">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="../img/vasos grandes.PNG" alt="Vasos Pequenos">
+                        <p>Vasos Pequenos</p>
+                        <button onclick="comprarProduto('Vasos Pequenos')">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="../img/vasos sde plastico.PNG" alt="Vasos de Plástico">
+                        <p>Vasos de Plástico</p>
+                        <button onclick="comprarProduto('Vasos de Plástico')">Comprar</button>
+                    </div>
+                </div>
+                
+                <h2>Principais Vendas (Flores)</h2>
+                <div class="produtos">
+                    <div class="produto">
+                        <img src="../img/girrasol.PNG" alt="Girassol">
+                        <p>Girassol</p>
+                        <button onclick="comprarProduto('Girassol')">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="../img/rosas.PNG" alt="Rosas">
+                        <p>Rosas</p>
+                        <button onclick="comprarProduto('Rosas')">Comprar</button>
+                    </div>
+                    <div class="produto">
+                        <img src="../img/orquideas.PNG" alt="Orquídeas">
+                        <p>Orquídeas</p>
+                        <button onclick="comprarProduto('Orquídeas')">Comprar</button>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
 
     <section class="vendas">
-        <h2>Principais Vendas (Vasos)</h2>
-        <div class="produtos">
-            <div class="produto">
-                <img src="../img/vasos pequenos.PNG" alt="Vasos Grandes">
-                <p>Vasos Grandes</p>
-            </div>
-            <div class="produto">
-                <img src="../img/vasos grandes.PNG" alt="Vasos Pequenos">
-                <p>Vasos Pequenos</p>
-            </div>
-            <div class="produto">
-                <img src="../img/vasos sde plastico.PNG" alt="Vasos de Plástico">
-                <p>Vasos de Plástico</p>
-            </div>
-        </div>
-
-        <h2>Principais Vendas (Flores)</h2>
-        <div class="produtos">
-            <div class="produto">
-                <img src="../img/girrasol.PNG" alt="Girassol">
-                <p>Girassol</p>
-            </div>
-            <div class="produto">
-                <img src="../img/rosas.PNG" alt="Rosas">
-                <p>Rosas</p>
-            </div>
-            <div class="produto">
-                <img src="../img/orquideas.PNG" alt="Orquídeas">
-                <p>Orquídeas</p>
-            </div>
-        </div>
     </section>
 
- <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Aprenda sobre Plantas</title>
-</head>
-<body>
-    <div class="search-container">
+    <section class="search-container">
         <h1>Aprenda um pouco mais sobre as plantas</h1>
         <div class="search-box">
             <input type="text" id="searchInput" placeholder="Pesquise aqui...">
-            <button onclick="searchPlant()">
-                🔍
-            </button>
+            <button onclick="searchPlant()">🔍</button>
+        </div>
+    </section>
+
+    <section class="dicas-container">
+        <div class="dicas">
+            <h2>9 dicas de como cuidar das suas plantas do jeito certo</h2>
+            <ul>
+                <li>Conheça a planta e suas necessidades.</li>
+                <li>Regue com moderação.</li>
+                <li>Forneça luz suficiente.</li>
+                <li>Evite ventos fortes.</li>
+                <li>Adube regularmente.</li>
+                <li>Remova folhas secas.</li>
+                <li>Observe sinais de pragas.</li>
+                <li>Faça podas estratégicas.</li>
+                <li>Dê carinho e atenção.</li>
+            </ul>
+        </div>
+    </section>
+
+
+    <section class="sugestao-container">
+        <h2>Não encontrou a planta que desejava?<br>Deixe aqui sua sugestão</h2>
+        <div class="add-button" onclick="openModal()">+</div>
+        <p>adicionar planta</p>
+    </section>
+
+    <div class="modal" id="modal">
+        <div class="modal-content">
+            <h3>Sugerir nova planta</h3>
+            <input type="text" id="plantaInput" placeholder="Nome da planta">
+            <button onclick="enviarSugestao()">Enviar</button>
+            <button onclick="closeModal()">Cancelar</button>
         </div>
     </div>
 
-    <script src="../css/style.css"></script>
-</body>
-    
-<div class="container">
-    <div class="dicas">
-        <h2>9 dicas de como cuidar das suas plantas do jeito certo</h2>
-        <ul>
-            <li>Conheça a planta e suas necessidades.</li>
-            <li>Regue com moderação.</li>
-            <li>Forneça luz suficiente.</li>
-            <li>Evite ventos fortes.</li>
-            <li>Adube regularmente.</li>
-            <li>Remova folhas secas.</li>
-            <li>Observe sinais de pragas.</li>
-            <li>Faça podas estratégicas.</li>
-            <li>Dê carinho e atenção.</li>
-        </ul>
-    </div>
-
-    <div class="acesso">
+    <section class="acesso">
         <h3>Entrar ou Cadastrar</h3>
         <button onclick="window.location.href='login.html'">Entrar</button>
         <button onclick="window.location.href='cadastro.html'">Cadastrar</button>
-    </div>
-</div>
+    </section>
 
+    <script src="script.js"></script>
 </body>
 </html>

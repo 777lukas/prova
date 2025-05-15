@@ -7,7 +7,9 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         });
     });
 });
-
+function comprarProduto(nomeProduto) {
+    alert("Você selecionou: " + nomeProduto);
+}
 function searchPlant() {
     const query = document.getElementById('searchInput').value;
     if (query) {
@@ -56,3 +58,24 @@ if (searchInput) {
 window.addEventListener('load', () => {
     document.body.classList.add('loaded');
 });
+
+function openModal() {
+    document.getElementById('modal').style.display = 'block';
+  }
+  
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+  
+  function enviarSugestao() {
+    const planta = document.getElementById('plantaInput').value;
+    if (planta.trim()) {
+      closeModal();
+    } else {
+      alert("Por favor, insira o nome de uma planta.");
+    }
+  }
+  <script>
+function comprarProduto(nomeProduto) {
+    alert("Você escolheu comprar: " + nomeProduto)}
+</script>
