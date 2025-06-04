@@ -53,29 +53,32 @@ if (searchInput) {
         });
     });
 }
+// Mostra alerta ao clicar em "Comprar"
+function comprarProduto(nomeProduto) {
+    alert("Você selecionou: " + nomeProduto);
+}
 
-
-window.addEventListener('load', () => {
-    document.body.classList.add('loaded');
-});
-
+// Pesquisa
+function searchPlant() {
+    const query = document.getElementById('searchInput').value;
+    if (query) {
+        alert("Você pesquisou por: " + query);
+    } else {
+        alert("Digite algo para pesquisar.");
+    }
+}
 function openModal() {
     document.getElementById('modal').style.display = 'block';
-  }
-  
-  function closeModal() {
+}
+function closeModal() {
     document.getElementById('modal').style.display = 'none';
-  }
-  
-  function enviarSugestao() {
-    const planta = document.getElementById('plantaInput').value;
-    if (planta.trim()) {
-      closeModal();
+}
+function enviarSugestao() {
+    const nomePlanta = document.getElementById('plantaInput').value;
+    if (nomePlanta.trim() !== '') {
+        alert("Sugestão enviada: " + nomePlanta);
+        closeModal();
     } else {
-      alert("Por favor, insira o nome de uma planta.");
+        alert("Por favor, escreva o nome da planta.");
     }
-  }
-  <script>
-function comprarProduto(nomeProduto) {
-    alert("Você escolheu comprar: " + nomeProduto)}
-</script>
+}
