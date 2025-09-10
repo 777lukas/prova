@@ -7,7 +7,7 @@ try:
 except FileNotFoundError:
     print("arquivo nao encontrado")
 
-print("n----cadstrar produto----")
+print("n----cadastrar produto----")
 nome_produto = input("digite o nome do produto:")
 
 while True:
@@ -30,7 +30,6 @@ novo_produto = {
     "tem_estoque": quantidade > 0
 }
 
-# escrever no arquivo json
 inventario.append(novo_produto)
 with open('loja.json','w')as arquivo:
     json.dump(inventario,arquivo,indent=4)
