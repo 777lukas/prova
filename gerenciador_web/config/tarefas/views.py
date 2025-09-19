@@ -20,4 +20,4 @@ def listar_tarefas(request):
         'minhas_tarefas' : tarefas_salvas
     }
     #3. redenrizarmos o template, passando a requisição e o contexto com os dados.
-    return render(request, 'tarefas/lista/lista.html', contexto)
+    return render(request, 'tarefas/lista.html', contexto)
