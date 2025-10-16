@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <title>Minha Lista de Tarefas</title>
+    <link rel="stylesheet" href= "{% static 'lista/lista.css' %}">
+
+
+</head>
+<body>
+    <h1>Gerenciador de Projeto Web</h1>
+
+    {% for projeto in minhas_projetos %}
+        <div class="tarefa {% if tarefa.concluida %}concluida{% endif %}">
+            <h2>{{ tarefa.titulo }}</h2>
+            <p>{{ tarefa.descricao }}</p>
+            <small>Criada em: {{ projeto.data_criacao }}</small>
+        </div>
+    {% empty %}
+        <p>Nenhum projeto cadastrada ainda. Adicione algumas pelo <a href="/admin">Admin</a>.</p>
+    {% endfor %}
+</body>
+</html>
