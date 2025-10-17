@@ -1,0 +1,17 @@
+Garantia de qualidade (QA - Quality Assurance)
+Foco: Processos
+objetivo: Previnir defeitos
+Atividades: Definir padrões, realizar revisões de códico, melhorar o processo de desenvolvimento.
+Pergunta: "Estamos fazendo as coisas do jeito certo?"
+
+Controle de Qualidade (QC - Quality Control)
+Foco: Produto
+Objetivo: Encontrar defeitos.
+Atividade: Executar testes, reportar bugs, validar se o software atende aos requesitos.
+Pergunta: "o resultado está certo?"
+
+O modelo tradicional, sequencial e rígido 
+Como o teste funciona aqui?
+É uma fase isolada, que só acontece depois que todo o desenvolvimento terminou.
+Principal desvantagem:
+Bugs são descobertos muito tarde, tornando a correção complexa, demorada e cara.
