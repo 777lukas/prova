@@ -17,5 +17,6 @@ class CasosDeBordaViewsTest(TestCase):
         response = self.client.post(url) 
  
         self.assertEqual(Tarefa.objects.count(), tarefas_antes - 1) 
+        self.assertRedirects(response, reverse('lista_tarefas')) 
         with self.assertRaises(Tarefa.DoesNotExist): 
             Tarefa.objects.get(pk=self.tarefa_para_excluir.id) 
